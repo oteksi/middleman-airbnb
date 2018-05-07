@@ -4,13 +4,25 @@ title: Le Wagon - Middleman - Team
 
 <div id="team">
   <div class="team-content">
+
     <ul class="list-inline text-center">
       <% ["oteksi", "oteksi"].each do |gh_username| %>
         <li>
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
-          <h3><%= gh_username.capitalize %></h3>
+          <% link_to "https://kitt.lewagon.com/alumni/#{gh_username}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+          <% end %>
+          <h2><%= gh_username.capitalize %></h2>
+          <p>
+            <% link_to "https://github.com/#{gh_username}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= gh_username %>
+            <% end %>
+          </p>
         </li>
       <% end %>
     </ul>
+
   </div>
 </div>
+
+
+<!--     <ul class="list-inline text-center">
