@@ -1,0 +1,10 @@
+# data/flats.yml
+oteksi:
+  name: "Maxime's home"
+  description: "Charming room in Belleville"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: true
+  rating: 5
+  animal: true
+  maximum_number_guest: 2
